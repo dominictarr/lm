@@ -1,0 +1,20 @@
+
+search () {
+
+if ( test -e ./node_modules ); then 
+  cd node_modules
+else
+  cd ..
+  if [ "$PWD" = "/" ]; then
+    exit 1
+  fi
+  search
+fi
+}
+init=$PWD
+search
+nm=$PWD
+cd $init
+k=`readlink -e $1`
+
+ln -s "$k" "$nm"

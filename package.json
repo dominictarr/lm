@@ -1,0 +1,21 @@
+{
+  "name": "lm",
+  "version": "0.0.0",
+  "description": "link a module from another dir into node_modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\\\"git@github.com:/.git\\\""
+  },
+  "keywords": [
+    "link"
+  ],
+  "bin": {
+    "lm": "./lm"
+  },
+  "author": "Dominic Tarr <dominic.tarr@gmail.com> (dominictarr.com)",
+  "license": "BSD"
+}
